@@ -1,0 +1,21 @@
+﻿# ==========================================
+# 独立版配置（使用本地 PostgreSQL）
+# 需要本地安装 PostgreSQL 16+，并创建 pet_adoption 数据库
+# ==========================================
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pet_adoption
+    username: postgres
+    password: 142500
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      idle-timeout: 300000
+
+# 日志
+logging:
+  level:
+    com.petadoption: info
+    org.springframework.security: warn

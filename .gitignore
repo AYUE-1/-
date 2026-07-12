@@ -1,0 +1,48 @@
+﻿# === Java / Maven ===
+target/
+*.jar
+*.war
+*.zip
+*.log
+.mvn/
+apache-maven-*/
+jre*/
+jre-minimal/
+maven.zip
+
+# === Node ===
+node_modules/
+dist/
+*.local
+
+# === Built frontend in backend ===
+pet-adoption-backend/src/main/resources/static/
+
+# === IDE ===
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Runtime / Data ===
+data/
+uploads/
+logs/
+
+# === Environment ===
+.env
+.env.local
+.env.*.local
+
+# === 发布版 ===
+发布版/
+宠物领养平台-发布版/
+
+# === Backend logs ===
+backend.log
+frontend.log
